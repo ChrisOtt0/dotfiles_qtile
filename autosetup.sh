@@ -10,7 +10,8 @@ sudo pacman -S \
 	ranger \
 	ttf-fira-code \
 	ttf-jetbrains-mono \
-	vlc
+	vlc \
+	wezterm
 
 sudo pacman -R \
 	feh
@@ -29,8 +30,11 @@ sudo cp -r ~/Documents/dotfiles_qtile/lightdm/slick-greeter.conf /etc/lightdm/
 
 # setup gtk & icon theme
 cp ~/Documents/dotfiles_qtile/gtkrc-2.0 ~/
+mkdir ~/.local/share/icons
+cp ~/Documents/dotfiles_qtile/icons ~/.local/share/icons
+mkdir ~/.themes
+cp ~/Documents/dotfiles_qtile/.themes ~/
 
 # setup .config folder
 cp -r ~/Documents/dotfiles_qtile/.config/ ~/
-
 

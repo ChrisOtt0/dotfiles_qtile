@@ -2,16 +2,16 @@ from libqtile.lazy import lazy
 from libqtile.config import Key
 
 mod = "mod4"
-terminal = "xfce4-terminal"
+terminal = "wezterm"
 
 keys = [
     # Programs
     Key([mod], "b", lazy.spawn("librewolf"), desc="spawn librewolf"),
-    Key([mod], "f", lazy.spawn(terminal + " -e ranger"), desc="spawn ranger"),
+    Key([mod], "f", lazy.spawn(terminal + " start ranger"), desc="spawn ranger"),
     Key([mod], "t", lazy.spawn("thunar"), desc="spawn librewolf"),
     Key([mod], "p", lazy.spawn(terminal), 
         lazy.spawn(terminal), 
-        lazy.spawn(terminal + " -e gtop"), desc="spawn programming env"),
+        lazy.spawn(terminal + " start gtop"), desc="spawn programming env"),
 
     # Switch between windows
     Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),

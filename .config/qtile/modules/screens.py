@@ -42,7 +42,7 @@ screens = [
                        foreground=colors[5],
                        background=colors[1]
                        ), 
-                widget.Sep(padding=6, linewidth=0, background=colors[5]), 
+                widget.Sep(padding=8, linewidth=0, background=colors[5]), 
                 volume,
                 widget.Sep(padding=6, linewidth=0, background=colors[5]), 
                 widget.TextBox(                                                                    
@@ -53,7 +53,6 @@ screens = [
                        background=colors[5],
                        ),   
                 widget.CurrentLayoutIcon(scale=0.55),
-                widget.Sep(padding=3, linewidth=0, background=colors[5]), 
                 widget.TextBox(
                        text = '',
                        padding = 0,
@@ -106,7 +105,7 @@ screens = [
                        background=colors[1]
                        ),
                 widget.Sep(padding=15, linewidth=0, background=colors[1]),
-                widget.Spacer(length=1015),
+                widget.Spacer(length=1030),
                 widget.TextBox(
                        text = '',
                        padding = 0,
