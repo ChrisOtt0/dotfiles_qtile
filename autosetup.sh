@@ -61,5 +61,5 @@ cp ~/Documents/dotfiles_qtile/.SpaceVim.d/ ~/
 
 # setup fish
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
-sudo chsh -s /bin/fish
+sudo chsh -s /usr/bin/fish
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
