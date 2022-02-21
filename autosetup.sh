@@ -4,19 +4,27 @@ sudo pacman -Suy \
 	fish \
 	gtop \
 	htop \
+  libreoffice-still \
+  libretro-mgba \
+  libretro-desmume \
   lua \
 	neofetch \
 	neovim \
+  nordvpn \
 	pipewire \
 	pipewire-jack \
 	psutils \
   python \
 	qbittorrent \
 	ranger \
+  retroarch \
 	ttf-fira-code \
 	ttf-jetbrains-mono \
+  virtualbox \
+  virtualbox-host-modules-arch \
 	vlc \
-	wezterm
+	wezterm \
+  xclip
 
 sudo pacman -R \
 	feh

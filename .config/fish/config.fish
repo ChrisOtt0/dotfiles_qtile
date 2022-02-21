@@ -3,10 +3,12 @@ if status is-interactive
 end
 
 set fish_greeting
-neofetch --disable gpu --color_blocks off --colors 4 2 245 2
+neofetch --disable gpu --color_blocks off --colors 14 2 245 2
 
 # Aliases
 alias ls='ls -a'
-alias neofetch='neofetch --disable gpu --color_blocks off --colors 4 2 245 2'
+alias neofetch='neofetch --disable gpu --color_blocks off --colors 14 2 245 2'
 alias ranger='ranger .'
-alias clear='clear && neofetch --disable gpu --color_blocks off --colors 4 2 245 2'
+alias clear='clear && neofetch --disable gpu --colo4r_blocks off --colors 14 2 245 2'
+alias cb='xclip -selection clipboard'
+alias vsc='vscodium'

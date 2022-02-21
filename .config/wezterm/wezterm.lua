@@ -20,7 +20,7 @@ local mycolors = {
 return {
 	color_scheme = "OneHalfDark",
 	font = wezterm.font("JetBrains Mono"),
-	font_size = 11.5,
+	font_size = 10,
 	use_fancy_tab_bar = false,
 	hide_tab_bar_if_only_one_tab = true,
 	colors = {
