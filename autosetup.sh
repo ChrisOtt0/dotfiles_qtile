@@ -50,14 +50,14 @@ sudo cp -r ~/Documents/dotfiles_qtile/lightdm/slick-greeter.conf /etc/lightdm/
 cp -r ~/Documents/dotfiles_qtile/.config/ ~/
 
 # setup gtk & icon theme
-cp ~/Documents/dotfiles_qtile/gtkrc-2.0 ~/
+cp -r ~/Documents/dotfiles_qtile/gtkrc-2.0 ~/
 mkdir ~/.local/share/icons
-cp ~/Documents/dotfiles_qtile/icons ~/.local/share/icons
+cp -r ~/Documents/dotfiles_qtile/icons ~/.local/share/icons
 mkdir ~/.themes
-cp ~/Documents/dotfiles_qtile/.themes ~/
+cp -r ~/Documents/dotfiles_qtile/.themes ~/
 
 # setup spacevim config
-cp ~/Documents/dotfiles_qtile/.SpaceVim.d/ ~/
+cp -r ~/Documents/dotfiles_qtile/.SpaceVim.d/ ~/
 
 # setup fish
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
