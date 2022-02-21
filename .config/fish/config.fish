@@ -12,5 +12,3 @@ alias ranger='ranger .'
 alias clear='clear && neofetch --disable gpu --colo4r_blocks off --colors 14 2 245 2'
 alias cb='xclip -selection clipboard'
 alias vsc='vscodium'
-
-fish ~/Documents/dotfiles_qtile/fish_setup.fish
