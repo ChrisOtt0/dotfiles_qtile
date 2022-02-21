@@ -33,7 +33,7 @@ screens = [
                 widget.Prompt(),
                 widget.Spacer(length=5),
                 widget.WindowName(foreground=colors[10],fmt='{}'),
-                widget.Systray(icon_size = 15),
+                widget.Systray(),
                 widget.Sep(padding=3, linewidth=0, background=colors[1]),
                 widget.TextBox(
                        text = '',
