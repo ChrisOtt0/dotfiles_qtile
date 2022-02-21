@@ -2,8 +2,11 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-neofetch --disable gpu --color_blocks off --colors 45 120 248 45 253
+set fish_greeting
+neofetch --disable gpu --color_blocks off --colors 4 2 245 2
 
 # Aliases
 alias ls='ls -a'
-alias neofetch='neofetch --disable gpu --colors_blocks off --colors 45 120 248 45 253'
+alias neofetch='neofetch --disable gpu --color_blocks off --colors 4 2 245 2'
+alias ranger='ranger .'
+alias clear='clear && neofetch --disable gpu --color_blocks off --colors 4 2 245 2'

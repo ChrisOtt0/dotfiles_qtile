@@ -1,13 +1,16 @@
-sudo pacman -S \
+sudo pacman -Suy \
+	cmatrix \
 	discord \
 	fish \
 	gtop \
 	htop \
+  lua \
 	neofetch \
 	neovim \
 	pipewire \
 	pipewire-jack \
 	psutils \
+  python \
 	qbittorrent \
 	ranger \
 	ttf-fira-code \
@@ -20,7 +23,12 @@ sudo pacman -R \
 
 yay -S \
 	librewolf \
-	qt5-styleplugins
+	pipes.sh \
+	qt5-styleplugins \
+  vscodium-bin
+
+curl -sLf https://spacevim.org/install.sh | bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # setup background
 cd
@@ -48,3 +56,6 @@ mkdir ~/.local/share/icons
 cp ~/Documents/dotfiles_qtile/icons ~/.local/share/icons
 mkdir ~/.themes
 cp ~/Documents/dotfiles_qtile/.themes ~/
+
+# setup spacevim config
+cp ~/Documents/dotfiles_qtile/.SpaceVim.d/ ~/

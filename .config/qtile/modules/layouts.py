@@ -5,9 +5,10 @@ from .mycolors import *
 colors = colors_atom_one_dark
 
 layouts = [
-    layout.MonadTall(margin=6, border_focus=colors[1],
-                     border_normal=colors[5],
+    layout.MonadTall(margin=6, border_focus=colors[3],
+                     border_normal=colors[1],
                      border_width=3),
+    layout.MonadTall(margin=0, border_focus=colors[3], border_normal=colors[1], border_width=3),
     #layout.Columns(border_focus_stack='#d75f5f'),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
@@ -15,7 +16,7 @@ layouts = [
     # layout.Bsp(),
     # layout.Matrix(),
     # layout.MonadTall(),
-    # layout.MonadWide(),
+    # layout.MonadWide(margin=6, border_focus=colors[3], border_normal=colors[1], border_width=3),
     # layout.RatioTile(),
     # layout.Tile(),
     # layout.TreeTab(),
