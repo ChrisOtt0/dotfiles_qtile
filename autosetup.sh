@@ -47,17 +47,17 @@ sudo cp -r ~/Documents/dotfiles_qtile/backgrounds /usr/share/
 sudo cp -r ~/Documents/dotfiles_qtile/lightdm/slick-greeter.conf /etc/lightdm/
 
 # setup .config folder
-cp -r ~/Documents/dotfiles_qtile/.config/ ~/
+sudo cp -r ~/Documents/dotfiles_qtile/.config/ ~/
 
 # setup gtk & icon theme
-cp -r ~/Documents/dotfiles_qtile/gtkrc-2.0 ~/
-mkdir ~/.local/share/icons
-cp -r ~/Documents/dotfiles_qtile/icons ~/.local/share/icons
-mkdir ~/.themes
-cp -r ~/Documents/dotfiles_qtile/.themes ~/
+sudo cp -r ~/Documents/dotfiles_qtile/gtkrc-2.0 ~/
+sudo mkdir ~/.local/share/icons
+sudo cp -r ~/Documents/dotfiles_qtile/icons ~/.local/share/icons
+sudo mkdir ~/.themes
+sudo cp -r ~/Documents/dotfiles_qtile/.themes ~/
 
 # setup spacevim config
-cp -r ~/Documents/dotfiles_qtile/.SpaceVim.d/ ~/
+sudo cp -r ~/Documents/dotfiles_qtile/.SpaceVim.d/ ~/
 
 # setup fish
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
