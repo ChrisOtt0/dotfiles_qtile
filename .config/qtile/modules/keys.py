@@ -12,6 +12,7 @@ keys = [
     Key([mod], "p", lazy.spawn(terminal), 
         lazy.spawn(terminal), 
         lazy.spawn(terminal + " start gtop"), desc="spawn programming env"),
+    Key([mod], "s", lazy.spawn("shotgun"), desc="take screenshot"),
 
     # Switch between windows
     Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),

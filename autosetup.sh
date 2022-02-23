@@ -15,10 +15,13 @@ sudo pacman -Suy \
 	psutils \
   python \
 	qbittorrent \
+  qt5ct \
 	ranger \
   retroarch \
+  shotgun \
 	ttf-fira-code \
 	ttf-jetbrains-mono \
+  vimiv \
   virtualbox \
   virtualbox-host-modules-arch \
 	vlc \
