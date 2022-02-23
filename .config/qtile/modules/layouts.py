@@ -8,7 +8,8 @@ layouts = [
     layout.MonadTall(margin=6, border_focus=colors[3],
                      border_normal=colors[1],
                      border_width=3),
-    layout.MonadTall(margin=0, border_focus=colors[3], border_normal=colors[1], border_width=3),
+    layout.Tile(margin=0, border_focus=colors[3], border_normal=colors[1], border_width=3),
+    #layout.MonadTall(margin=0, border_focus=colors[3], border_normal=colors[1], border_width=3),
     #layout.Columns(border_focus_stack='#d75f5f'),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
@@ -18,7 +19,6 @@ layouts = [
     # layout.MonadTall(),
     # layout.MonadWide(margin=6, border_focus=colors[3], border_normal=colors[1], border_width=3),
     # layout.RatioTile(),
-    # layout.Tile(),
     # layout.TreeTab(),
     # layout.VerticalTile(),
     # layout.Zoomy(),
