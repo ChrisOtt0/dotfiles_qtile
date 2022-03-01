@@ -1,6 +1,5 @@
 sudo pacman -Suy \
 	cmatrix \
-	discord \
 	fish \
 	gtop \
 	htop \
