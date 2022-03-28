@@ -1,41 +1,44 @@
+#!/usr/bin/bash
+
 sudo pacman -Suy \
+	brightnessctl \
 	cmatrix \
 	fish \
 	gtop \
 	htop \
-  libreoffice-still \
-  libretro-mgba \
-  libretro-desmume \
-  lua \
+	libreoffice-still \
+	libretro-mgba \
+	libretro-desmume \
+  	lua \
 	neofetch \
 	neovim \
 	pipewire \
 	pipewire-jack \
 	psutils \
-  python \
+  	python \
 	qbittorrent \
-  qt5ct \
+  	qt5ct \
 	ranger \
-  retroarch \
-  shotgun \
+  	retroarch \
+  	shotgun \
 	ttf-fira-code \
 	ttf-jetbrains-mono \
-  vimiv \
-  virtualbox \
-  virtualbox-host-modules-arch \
+  	vimiv \
+  	virtualbox \
+  	virtualbox-host-modules-arch \
 	vlc \
 	wezterm \
-  xclip
+  	xclip
 
 sudo pacman -R \
 	feh
 
 yay -S \
 	librewolf-bin \
-  nordvpn-bin \
+  	nordvpn-bin \
 	pipes.sh \
 	qt5-styleplugins \
-  vscodium-bin
+  	vscodium-bin
 
 curl -sLf https://spacevim.org/install.sh | bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -65,10 +68,10 @@ sudo git clone https://github.com/dracula/gtk
 # setup spacevim config
 sudo cp -r ~/Documents/git/personal/dotfiles_qtile/.SpaceVim.d/ ~/
 
+# setup .config folder
+cp -r ~/Documents/git/personal/dotfiles_qtile/.config ~/
+
 # setup fish
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
 sudo chsh -s /usr/bin/fish
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-
-# setup .config folder
-cp -r ~/Documents/git/personal/dotfiles_qtile/.config ~/
