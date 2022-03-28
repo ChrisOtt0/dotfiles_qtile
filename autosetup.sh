@@ -4,6 +4,7 @@ sudo pacman -Suy \
 	brightnessctl \
 	cmatrix \
 	fish \
+	gnome-keyring \
 	gtop \
 	htop \
 	libreoffice-still \
@@ -64,9 +65,6 @@ git clone https://github.com/dracula/gtk
 cd /usr/share/themes
 sudo git clone https://github.com/UnnatShaneshwar/AtomOneDarkTheme
 sudo git clone https://github.com/dracula/gtk
-
-# setup spacevim config
-sudo cp -r ~/Documents/git/personal/dotfiles_qtile/.SpaceVim.d/ ~/
 
 # setup .config folder
 cp -r ~/Documents/git/personal/dotfiles_qtile/.config ~/
