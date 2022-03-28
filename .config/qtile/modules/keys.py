@@ -6,10 +6,10 @@ terminal = "wezterm"
 
 keys = [
     # Programs
-    Key([mod], "b", lazy.spawn("librewolf"), desc="spawn librewolf"),
+    Key([mod], "b", lazy.spawn("firefox"), desc="spawn firefox"),
     Key([mod], "f", lazy.spawn(terminal + " start ranger"), desc="spawn ranger"),
     Key([mod], "t", lazy.spawn("thunar"), desc="spawn librewolf"),
-    Key([mod], "p", lazy.spawn(terminal), 
+    Key([mod], "p", lazy.spawn("vscodium"), 
         lazy.spawn(terminal), 
         lazy.spawn(terminal + " start gtop"), desc="spawn programming env"),
     Key([mod], "s", lazy.spawn("shotgun"), desc="take screenshot"),
@@ -37,10 +37,10 @@ keys = [
         lazy.layout.shuffle_right(),
         desc="Move window to the right"),
     Key([mod, "shift"],
-        "j",
+        "k",
         lazy.layout.shuffle_down(),
         desc="Move window down"),
-    Key([mod, "shift"], "k", lazy.layout.shuffle_up(), desc="Move window up"),
+    Key([mod, "shift"], "j", lazy.layout.shuffle_up(), desc="Move window up"),
 
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.

@@ -1,13 +1,14 @@
 from libqtile import bar
 from .widgets import *
 from libqtile.config import Screen
+from .mycolors import *
 import os
 
-colors = colors_atom_one_dark
+colors = colors_pink
 
 screens = [
     Screen(
-        wallpaper = "~/.config/backgrounds/background.jpeg",
+        wallpaper = "~/.config/backgrounds/background.jpg",
         wallpaper_mode = "stretch",
         top=bar.Bar(
             [   
@@ -105,7 +106,7 @@ screens = [
                        background=colors[1]
                        ),
                 widget.Sep(padding=15, linewidth=0, background=colors[1]),
-                widget.Spacer(length=1030),
+                widget.Spacer(length=1230),
                 widget.TextBox(
                        text = '',
                        padding = 0,
@@ -139,7 +140,16 @@ screens = [
                        foreground=colors[5],
                        background=colors[1]
                        ),
-                widget.Sep(padding=3, linewidth=0, background=colors[5]), 
+
+                       #region Laptop
+                widget.Sep(padding=8, linewidth=0, background=colors[5]), 
+                widget.BatteryIcon(
+                        background = colors[5],
+                        theme_path = '/home/chris/.local/share/icons/DarK-icons-master',
+                        ),
+                widget.Sep(padding=8, linewidth=0, background=colors[5]), 
+                        #endregion
+
                 widget.TextBox(
                        text = '',
                        padding = 0,

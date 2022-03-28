@@ -21,7 +21,7 @@ function fish_prompt
     # ╰─>$ echo there
 
     set -l retc red
-    test $status = 0; and set retc green
+    test $status = 0; and set retc ea99d5
 
     set -q __fish_git_prompt_showupstream
     or set -g __fish_git_prompt_showupstream auto
@@ -34,20 +34,20 @@ function fish_prompt
         set_color normal
         set_color $retc
         echo -n '─'
-        set_color -o green
+        set_color -o ea99d5 
         echo -n '['
         set_color normal
         test -n $field_name
         and echo -n $field_name:
         set_color $retc
         echo -n $field_value
-        set_color -o green
+        set_color -o ea99d5
         echo -n ']'
     end
 
-    set_color $retc
+    set_color ea99d5
     echo -n '┬─'
-    set_color -o green
+    set_color -o ea99d5
     echo -n [
 
     if functions -q fish_is_root_user; and fish_is_root_user
@@ -69,7 +69,7 @@ function fish_prompt
     echo -n (prompt_hostname)
     set_color -o white
     echo -n :(prompt_pwd)
-    set_color -o green
+    set_color -o ea99d5
     echo -n ']'
 
     # Date
@@ -87,9 +87,9 @@ function fish_prompt
             case default
                 set mode (set_color --bold red)N
             case insert
-                set mode (set_color --bold green)I
+                set mode (set_color --bold ea99d5)I
             case replace_one
-                set mode (set_color --bold green)R
+                set mode (set_color --bold ea99d5)R
                 echo '[R]'
             case replace
                 set mode (set_color --bold cyan)R

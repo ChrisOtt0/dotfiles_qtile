@@ -2,7 +2,7 @@ from libqtile import widget
 from libqtile import qtile
 from .mycolors import *
 
-colors = colors_atom_one_dark
+colors = colors_pink
 
 
 widget_defaults = dict(

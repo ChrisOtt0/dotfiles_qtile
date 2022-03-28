@@ -18,7 +18,7 @@ local mycolors = {
 }
 
 return {
-	color_scheme = "OneHalfDark",
+	color_scheme = "Dracula",
 	font = wezterm.font("JetBrains Mono"),
 	font_size = 10,
 	use_fancy_tab_bar = false,

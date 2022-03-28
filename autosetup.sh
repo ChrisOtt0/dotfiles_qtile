@@ -42,20 +42,25 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # setup background
 cd
-sudo cp -r ~/Documents/git/personal/dotfiles_qtile/backgrounds ~/.config/
+cp -r ~/Documents/git/personal/dotfiles_qtile/backgrounds ~/.config/
 sudo cp -r ~/Documents/git/personal/dotfiles_qtile/backgrounds /usr/share/
 
 # setup lightdm
 sudo cp -r ~/Documents/git/personal/dotfiles_qtile/lightdm/slick-greeter.conf /etc/lightdm/
 
 # setup gtk & icon theme
-sudo cp -r ~/Documents/git/personal/dotfiles_qtile/gtkrc-2.0 ~/
-sudo mkdir ~/.local/share/icons
-sudo cp -r ~/Documents/git/personal/dotfiles_qtile/icons ~/.local/share/
-sudo mkdir ~/.themes
+cp -r ~/Documents/git/personal/dotfiles_qtile/gtkrc-2.0 ~/
+mkdir ~/.local/share/icons
+cp -r ~/Documents/git/personal/dotfiles_qtile/icons ~/.local/share/
+sudo cp -r ~/Documents/git/personal/dotfiles_qtile/icons /usr/share/
+mkdir ~/.themes
 cd ~/.themes
 git clone https://github.com/UnnatShaneshwar/AtomOneDarkTheme
-cd
+git clone https://github.com/dracula/gtk
+
+cd /usr/share/themes
+sudo git clone https://github.com/UnnatShaneshwar/AtomOneDarkTheme
+sudo git clone https://github.com/dracula/gtk
 
 # setup spacevim config
 sudo cp -r ~/Documents/git/personal/dotfiles_qtile/.SpaceVim.d/ ~/
@@ -66,4 +71,4 @@ sudo chsh -s /usr/bin/fish
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
 # setup .config folder
-sudo cp -r ~/Documents/git/personal/dotfiles_qtile/.config ~/
+cp -r ~/Documents/git/personal/dotfiles_qtile/.config ~/

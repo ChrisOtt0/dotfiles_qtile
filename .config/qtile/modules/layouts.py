@@ -2,13 +2,13 @@ from libqtile import layout
 from libqtile.config import Match
 from .mycolors import *
 
-colors = colors_atom_one_dark
+colors = colors_pink
 
 layouts = [
     layout.MonadTall(margin=6, border_focus=colors[3],
                      border_normal=colors[1],
-                     border_width=3),
-    layout.Tile(margin=0, border_focus=colors[3], border_normal=colors[1], border_width=3),
+                     border_width=2),
+    layout.Tile(margin=0, border_focus=colors[3], border_normal=colors[1], border_width=2),
     #layout.MonadTall(margin=0, border_focus=colors[3], border_normal=colors[1], border_width=3),
     #layout.Columns(border_focus_stack='#d75f5f'),
     layout.Max(),
@@ -33,4 +33,6 @@ floating_layout = layout.Floating(float_rules=[
     Match(wm_class='ssh-askpass'),  # ssh-askpass
     Match(title='branchdialog'),  # gitk
     Match(title='pinentry'),  # GPG key password entry
-])
+    ],
+    border_focus=colors[3], border_normal=colors[1], border_width=2
+    )
