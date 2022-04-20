@@ -71,5 +71,5 @@ cp -r ~/Documents/git/personal/dotfiles_qtile/.config ~/
 
 # setup fish
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
-sudo chsh -s /usr/bin/fish
+chsh -s /usr/bin/fish
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
